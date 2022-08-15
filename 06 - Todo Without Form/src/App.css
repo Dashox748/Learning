@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(183, 158, 54, 1) 0%,
+    rgba(238, 159, 130, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(183, 158, 54, 1) 0%,
+    rgba(238, 159, 130, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(183, 158, 54, 1) 0%,
+    rgba(238, 159, 130, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EE9F82', endColorstr='#B79E36', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(183, 158, 54, 1) 0%,
+    rgba(238, 159, 130, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(183, 158, 54, 1) 0%,
+    rgba(238, 159, 130, 1) 100%
+  );
+}
+
+.todoList__container {
+  width: 500px;
+  height: 400px;
+}
+.todoList__container-add {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.todoList__container-add input {
+  width: 100%;
+  height: 45px;
+  color: gray;
+  outline: none;
+  font-size: 20px;
+  padding: 0 25px;
+}
+.todoList__container-add button {
+  position: absolute;
+  right: 20px;
+  background: orange;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.todoList__container-add button:active {
+  opacity: 70%;
+}
+.todoList__container-show {
+}
+
+.todoList__container-show div {
+  display: flex;
+  padding-bottom: 30px;
+}
+.todoList__container-show div button {
+  width: 10%;
+  cursor: pointer;
+}
+#status {
+  background: green;
+  color: white;
+  font-size: 25px;
+}
+#del {
+  background: red;
+  color: gray;
+  font-size: 34px;
+  color: white;
+}
+.todoList__container-show div button:active {
+  opacity: 70%;
+}
+.line {
+   text-decoration: line-through !important;
+}
+.todoList__container-show div div {
+  display: flex;
+  background: white;
+  width: 80%;
+  height: 45px;
+  color: gray;
+  outline: none;
+  font-size: 20px;
+  padding: 0 25px;
+  align-items: center;
+  font-weight: 600;
+  color: #4b4b4b;
+
+  cursor: default;
+}

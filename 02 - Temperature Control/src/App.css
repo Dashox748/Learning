@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.temperature__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #074388;
+  border-radius: 10px;
+}
+.temperature__container-padding {
+  padding: 1rem;
+}
+.temperature__container-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  background: blue;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+.temperature__container-change {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0 10px;
+}
+.temperature__container-change button {
+  width: 40px;
+  height: 40px;
+  background: #777777;
+  border: 2px solid white;
+  border-radius: 100%;
+  color: white;
+  font-size: 22px;
+    cursor: pointer;
+}
+.temperature__container-change button:active{
+  background: #969696;
+}

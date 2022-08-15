@@ -1,0 +1,51 @@
+.features__container .feature__container{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.features__container .feature__container_title{
+    min-width: 200px;
+    max-width: 210px;
+    margin-right: 10%;
+}
+.features__container .feature__container_text{
+min-width: 250px;
+}
+
+
+.features__container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.feature__container-heading{
+    flex:1;
+
+}
+.feature__container-heading h1{
+    max-width: 700px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    margin-bottom: 50px;
+}
+.feature__container-heading p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+
+    color: #FF8A71;
+
+}
+.feature__container-ft{
+    flex: 1;
+
+}

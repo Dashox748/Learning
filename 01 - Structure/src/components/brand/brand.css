@@ -1,0 +1,15 @@
+.brand__companies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.brand__companies div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    max-width: 150px;
+    min-width: 120px;
+}

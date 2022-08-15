@@ -1,0 +1,94 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    padding-bottom: 1rem;
+
+  background: #031b34;
+}
+.footer__container-heading {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    margin: 9rem 4rem 9rem 4rem;
+}
+.footer__container-heading h1 {
+  letter-spacing: -0.04em;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+}
+.footer__container-heading button {
+  background: none;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+    font-family:var(--font-family), serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+.footer__container_credits {
+  display: flex;
+  flex-direction: row;
+    margin: 0 3rem 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.footer__container_credits-logo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer__container_credits-logo img{
+    max-width: 100px;
+    margin-bottom: 1.4rem;
+}
+.footer__container_credits-logo p{
+    max-width: 200px;
+}
+.footer__container_credits h5{
+    font-family:var(--font-family), serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+.footer__container_credits p{
+    font-family:var(--font-family), serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+
+}
+.feature__container_credits-links p,
+.feature__container_credits-company p,
+.feature__container_credits-touch p{
+    cursor: pointer;
+}
+
+.footer__container_rights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+
+}
