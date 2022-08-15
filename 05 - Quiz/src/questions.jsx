@@ -44,13 +44,4 @@ export const questions = [
             { answerText: "Ridley Scott", isCorrect: false },
         ],
     },
-    {
-        questionText: "Which day Zuzia adopted Frytka?",
-        answerOptions: [
-            { answerText: "October 18th 2020", isCorrect: false },
-            { answerText: "February 8th 2020", isCorrect: false },
-            { answerText: "March 8th 2021", isCorrect: true },
-            { answerText: "February 21st 2021", isCorrect: false },
-        ],
-    },
 ];
