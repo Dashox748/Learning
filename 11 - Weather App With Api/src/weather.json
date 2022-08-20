@@ -1,0 +1,30 @@
+{
+  "coord": { "lon": 17.0333, "lat": 51.1 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "bezchmurnie", "icon": "01d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 33.71,
+    "feels_like": 35.44,
+    "temp_min": 32,
+    "temp_max": 36.66,
+    "pressure": 1012,
+    "humidity": 42
+  },
+  "visibility": 10000,
+  "wind": { "speed": 3.09, "deg": 270 },
+  "clouds": { "all": 0 },
+  "dt": 1660913224,
+  "sys": {
+    "type": 2,
+    "id": 2018700,
+    "country": "PL",
+    "sunrise": 1660880675,
+    "sunset": 1660932410
+  },
+  "timezone": 7200,
+  "id": 3081368,
+  "name": "Wrocław",
+  "cod": 200
+}
