@@ -1,0 +1,43 @@
+.display-recipe {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  overflow: hidden;
+  background: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px -80px 36px -28px inset;
+}
+.display-recipe img {
+  width: 100%;
+  height: 65%;
+  max-height: 300px;
+}
+.display-recipe-padding {
+  padding: 0 2rem;
+}
+.display-recipe h1 {
+    margin-top: 10px;
+  font-weight: 700;
+  font-size: 28px;
+}
+.kcal-type {
+  display: flex;
+  justify-content: space-between;
+}
+h4 {
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: 500;
+    margin-bottom: 25px;
+}
+.display-recipe button {
+  width: 250px;
+  height: 50px;
+  border: none;
+  background: orange;
+  border-radius: 20px;
+  margin-top: auto;
+    align-self: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
