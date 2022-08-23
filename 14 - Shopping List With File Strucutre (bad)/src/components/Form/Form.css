@@ -1,0 +1,70 @@
+.form__container form input,
+.hamburger-menu-relative,
+.header {
+  height: 40px;
+  outline: none;
+  border: none;
+  background: white;
+}
+
+.form__container form {
+
+  display: flex;
+  border: none;
+  outline: none;
+}
+.form__container form input {
+  width: 300px;
+  font-size: 20px;
+  padding: 0 1rem;
+  font-weight: 500;
+}
+
+.hamburger-menu-relative {
+  position: relative;
+  width: 40px;
+  background: white;
+  cursor: pointer;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.hamburger-menu-relative:active {
+  opacity: 80%;
+}
+
+.hamburger-menu_toggle-absolute {
+  position: absolute;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  background: white;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content div {
+  cursor: pointer;
+  padding: 1rem;
+  transition: all  ease-in-out 0.3s;
+}
+.content div:hover {
+  background: #cecece;
+}
+.content div:active{
+    background: white;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

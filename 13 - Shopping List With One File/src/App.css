@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #bee3ff;
+}
+.App__container_display {
+  margin-top: 1rem;
+}
+.item__container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+}
+.completed {
+  text-decoration: line-through;
+}
+.App__container {
+  background-color: #ec645b;
+  padding: 1.5rem;
+  border-radius: 3px;
+}
+.App__container-input {
+  display: flex;
+  align-items: center;
+  height: 35px;
+
+  background: rgb(250, 145, 145);
+  border-radius: 5px;
+}
+input {
+  padding: 1.3rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+input::placeholder {
+  color: white;
+}
+.plus {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  margin-right: 1rem;
+  cursor: pointer;
+
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.item__container-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+  background: white;
+  border-radius: 50%;
+ width: 20px;
+  height: 20px;
+}
+.item-display {
+  font-size: 27px;
+  font-weight: 500;
+  color: white;
+}
+.item__container-quantity {
+  color: #ec645b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 25px;
+  width: 60px;
+  border-radius: 15px;
+}
+h2 {
+  margin: 0 5px;
+}
+.item__container-quantity span {
+  font-weight: 700;
+  font-size: 22px;
+  cursor: pointer;
+}
+span {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+.check-mark{
+  font-size: 18px;
+  font-weight: 700;
+}
+.total{
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}

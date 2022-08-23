@@ -1,0 +1,30 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+/* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 50% 50%, rgba(76, 107, 175, 1) 20%, rgba(123, 25, 140, 1) 80%);
+
+/* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 50% 50%, rgba(76, 107, 175, 1) 20%, rgba(123, 25, 140, 1) 80%);
+
+/* opera 11.10+ */
+    background:-o-radial-gradient(circle at 50% 50%, rgba(76, 107, 175, 1) 20%, rgba(123, 25, 140, 1) 80%);
+
+/* ie 10+ */
+    background:-ms-radial-gradient(circle at 50% 50%, rgba(76, 107, 175, 1) 20%, rgba(123, 25, 140, 1) 80%);
+
+/* global 92%+ browsers support */
+    background:radial-gradient(circle at 50% 50%, rgba(76, 107, 175, 1) 20%, rgba(123, 25, 140, 1) 80%);
+
+
+}

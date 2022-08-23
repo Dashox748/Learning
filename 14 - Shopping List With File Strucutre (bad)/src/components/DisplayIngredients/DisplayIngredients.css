@@ -1,0 +1,42 @@
+
+
+
+.ingredients__container-display{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    gap: 1rem;
+}
+.ingredients__container-display div div{
+    display: flex;
+    align-items: center;
+    background: white;
+    height: 50px;
+    font-size: 25px;
+    padding-left: 1rem;
+    justify-content: space-between;
+}
+.ingredients__container-display-button-status{
+    height: 100%;
+    width: 50px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+}
+.ingredients__container-display-button-quantity{
+color: darkorange;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.ingredients__container-display-button-quantity span {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+.show-ingredient{
+
+}
