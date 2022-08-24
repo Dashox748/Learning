@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  height: 60px;
+  background: #ffa646;
+  justify-content: space-between;
+  align-items: center;
+}
+.items ul {
+  list-style: none;
+  display: flex;
+
+  color: white;
+  font-size: 25px;
+}
+
+h1 {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    display: block;
+  }
+  nav {
+    position: relative;
+  }
+  ul {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    background: gray;
+    top: 60px;
+    left: -100%;
+    transition: all 0.5s ease-out;
+  }
+  li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 1rem;
+      transition: all 0.3s ease-out;
+      cursor: pointer;
+  }
+  .active {
+    left: 0;
+    top: 60px;
+  }
+  .active li:hover{
+      background: darkgray;
+
+  }
+}
