@@ -1,0 +1,8 @@
+.figure-container {
+
+    justify-content: center;
+     fill: transparent;
+     stroke: #fff;
+     stroke-width: 4px;
+     stroke-linecap: round;
+ }

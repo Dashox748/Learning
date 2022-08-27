@@ -1,0 +1,17 @@
+.wrong__container{
+    display: flex;
+    flex-direction: column;
+
+}
+.wrong__container div{
+    gap: 7px;
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+.wrong__container h3{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 500;
+}

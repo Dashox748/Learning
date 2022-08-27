@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    /*font-family: 'Manrope', sans-serif;*/
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 50% 50%, rgba(97, 67, 133, 1) 0%, rgba(81, 99, 149, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 50% 50%, rgba(97, 67, 133, 1) 0%, rgba(81, 99, 149, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 50% 50%, rgba(97, 67, 133, 1) 0%, rgba(81, 99, 149, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 50% 50%, rgba(97, 67, 133, 1) 0%, rgba(81, 99, 149, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 50% 50%, rgba(97, 67, 133, 1) 0%, rgba(81, 99, 149, 1) 100%);
+}
+.hangMan__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hangMan__container-middle{
+    gap: 5rem;
+    width: 680px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+
+}

@@ -1,0 +1,17 @@
+.notification__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,40%);
+    width: 270px;
+    border-radius: 10px 10px 0 0 ;
+    color: white;
+    font-size: 25px;
+    padding: 1rem;
+    position: fixed;
+    bottom: -100px;
+    transition: all 0.5s ease-out;
+}
+.active{
+    bottom: 0;
+}

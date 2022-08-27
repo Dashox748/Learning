@@ -1,0 +1,15 @@
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.header__container h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+.header__container h2{
+    font-size: 28px;
+    font-weight: 300;
+}
