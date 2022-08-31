@@ -1,0 +1,28 @@
+.navbar-bottom__container {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-bottom__container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navbar-bottom__container li {
+  padding: 1rem 0 1rem 1rem;
+  color: gray;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  margin-right: 1rem;
+}
+.navbar-bottom__container li:hover {
+  background: #e7e7e7;
+  color: black;
+}
+.navbar-bottom__container li img {
+  margin-right: 0.7rem;
+}

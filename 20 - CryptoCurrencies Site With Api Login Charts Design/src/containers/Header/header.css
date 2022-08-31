@@ -1,0 +1,57 @@
+.header__container {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+.header__container-center {
+    width: 100%;
+  display: flex;
+}
+.header__container-logo {
+  width: 285px;
+  border: 1px solid firebrick;
+  padding-left: 2rem;
+}
+
+.header__container-welcome {
+  flex: 1;
+  border: 1px solid blue;
+  padding-left: 2rem;
+}
+.header__container-welcome h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.header__container-welcome p {
+  color: gray;
+  font-size: 18px;
+}
+.header__container-user {
+  display: flex;
+  border: 1px solid rosybrown;
+}
+.header__container-user img{
+  cursor: pointer;
+}
+.header__container-user-align{
+  display: flex;
+  height: 35px;
+  border: 1px solid orange;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+.header__container-user-align h3{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.profile_picture{
+  background: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}

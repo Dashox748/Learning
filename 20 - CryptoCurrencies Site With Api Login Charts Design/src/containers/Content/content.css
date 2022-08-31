@@ -1,0 +1,47 @@
+.content__container{
+    padding: 2rem 0 0 5rem;
+}
+.content__container-info{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(220px,auto));
+    gap: 2rem;
+}
+.crypto__display-name{
+    display: flex;
+    flex-direction: column;
+}
+.crypto__display-name img{
+    width: 70px;
+    height: 60px;
+    margin-left: 2rem
+
+}
+.crypto__display__percentage-usd{
+    display: flex;
+
+    color: gray;
+    font-size: 14px;
+}
+.crypto__display__percentage-usd img{
+    width: 18px;
+    height: 20px;
+}
+.crypto__display-current-price{
+    font-size: 20px;
+}
+.crypto__display-current-usd{
+    margin-right: 1rem;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.content__container-info h3{
+    font-weight: 500;
+    font-size: 22px;
+}
+.content__container-graphs{
+    margin-top: 3rem;
+}
