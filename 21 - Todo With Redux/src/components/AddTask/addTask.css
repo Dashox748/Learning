@@ -1,0 +1,55 @@
+.addTask__container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 7rem;
+}
+.addTask__container input{
+    color: gray;
+    font-size: 20px;
+    width: 500px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: white;
+    padding-left: 1rem;
+}
+.addTask__container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background: white;
+    border: none;
+    border-left: 1px solid black;
+    cursor: pointer;
+    height: 100%;
+    font-size: 20px;
+}
+
+.addTask__container button:active{
+    opacity: 80%;
+}
+.addTask__container-button span{
+height: 10px;
+}
+.addTask__container-button{
+    position: relative;
+
+}
+.addTask__container-list{
+    position: absolute;
+
+    background: white;
+}
+.addTask__container-list ul{
+    list-style: none;
+}
+.addTask__container-list ul li{
+    transition: all 0.2s;
+    padding: 1rem;
+    cursor: pointer;
+}
+.addTask__container-list ul li:hover{
+    background: #dedcdc;
+}
