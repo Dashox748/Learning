@@ -1,11 +1,9 @@
-.navbar__container{
-    display: flex;
-    flex-direction: column;
-    width: 285px;
-    height: 100%;
-    justify-content: space-between;
-    padding: 0 0 3rem 2rem;
-    border: 3px solid darkorange;
+.navbar__container {
+  display: flex;
+  flex-direction: column;
+  width: 285px !important;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 0 3rem 2rem;
+  border: 3px solid darkorange;
 }
-
-

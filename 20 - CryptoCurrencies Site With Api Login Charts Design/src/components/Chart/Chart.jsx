@@ -23,8 +23,7 @@ ChartJS.register(
   Filler
 );
 
-function Chart({cryptoName}) {
-
+function Chart({ cryptoName }) {
   useEffect(() => {
     axios
       .get(
@@ -48,12 +47,13 @@ function Chart({cryptoName}) {
             {
               label: cryptoName,
               data: newDatasPrice,
-              backgroundColor: "red",
+
+        backgroundColor: "red",
               borderColor: "red",
               tension: 0.4,
               showLine: true,
             },
-          ],
+          ]
         });
       });
   }, [cryptoName]);
@@ -73,8 +73,10 @@ function Chart({cryptoName}) {
   });
 
   return (
-    <div style={{ width: "600px", height: "400px" }}>
-      <Line data={data}>Hello</Line>
+    <div style={{width:"1200px",height:"400px"}}>
+      <Line options={{maintainAspectRatio:false, plugins:{legend:{display:false}}}}  className="chart-graph-line" data={data}>
+        Hello
+      </Line>
     </div>
   );
 }

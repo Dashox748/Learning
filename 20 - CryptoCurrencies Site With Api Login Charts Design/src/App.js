@@ -6,18 +6,23 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [crypto, setCrypto] = useState("ethereum");
+  const [crypto, setCrypto] = useState("bitcoin");
   const [data, setData] = useState([]);
-  const iss = false;
+  const [trending, setTrending] = useState([]);
   useEffect(() => {
+    let endpoints = [
+      `https://api.coingecko.com/api/v3/coins/${crypto}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=true&sparkline=false`,
+      "https://api.coingecko.com/api/v3/search/trending",
+      "https://api.github.com/users/ejirocodes/followers",
+      "https://api.github.com/users/ejirocodes/following",
+    ];
     axios
-      .get(
-        `https://api.coingecko.com/api/v3/coins/${crypto}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=true&sparkline=false`
-      )
-      .then((response) => {
-        setData(response.data);
-        console.log("fetched");
+      .all(endpoints.map((endpoint) => axios.get(endpoint)))
+      .then((data) => {
+        setData(data[0].data);
+        setTrending(data[1].data);
       })
+
       .catch((error) => {
         console.log("error " + error);
       });
@@ -26,8 +31,7 @@ function App() {
   const changeDisplayCrypto = (toWhatCrypto) => {
     setCrypto(toWhatCrypto);
   };
-
-
+  console.log(data);
   return (
     <div className="App__container">
       <Header />
@@ -35,7 +39,9 @@ function App() {
         <Navbar changeCrypto={changeDisplayCrypto} />
         {data.length !== 0 ? (
           <Content
-            cryptoName={data.id.charAt(0).toUpperCase() + data.id.slice(1).toLowerCase()}
+            cryptoName={
+              data.id.charAt(0).toUpperCase() + data.id.slice(1).toLowerCase()
+            }
             img={data.image.small}
             cryptoCurrentPrice={data.market_data.current_price.usd}
             cryptoChangePriceCurrency={data.market_data.price_change_24h}
@@ -45,6 +51,7 @@ function App() {
             cryptoSymbol={data.symbol}
             cryptoRank={data.coingecko_rank}
             cryptoMarketCap={data.market_data.market_cap.usd}
+            trending={trending.coins}
           />
         ) : null}
       </div>

@@ -1,0 +1,11 @@
+.trendingCurrency__container{
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-bottom: 1px solid black;
+    gap: 2rem;
+}
+.trendingCurrency__container h4{
+    font-size: 22px;
+    font-weight: 500;
+}

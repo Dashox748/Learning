@@ -28,16 +28,15 @@
   cursor: pointer;
   transition: all 0.3s ease-out;
   margin-right: 1rem;
-
 }
 .navbar-top__container li:hover {
   background: #e7e7e7;
   color: black;
 }
-.navbar-top__container li img{
+.navbar-top__container li img {
   margin-right: 0.7rem;
 }
-.navbar-top__container li span{
+.navbar-top__container li span {
   flex: 1;
 }
 .expand_menu p {
