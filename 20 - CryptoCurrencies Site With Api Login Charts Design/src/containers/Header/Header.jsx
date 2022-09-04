@@ -2,13 +2,23 @@ import "./header.css";
 import Logo from "../../data/img/Logo.png";
 import Search from "../../data/img/search.png";
 import Notification from "../../data/img/bell.png";
-import {useAuth0} from "@auth0/auth0-react";
+import { useAuth0 } from "@auth0/auth0-react";
+import { useState } from "react";
 
-
-
-function Header() {
-
+function Header({ findCrypto }) {
   const { loginWithRedirect, user, isAuthenticated } = useAuth0();
+  const [searchInput, setSearchInput] = useState("");
+
+  const handleSearchInput = (event) => {
+    setSearchInput(event.target.value);
+  };
+
+  const onSearch = (e) => {
+    e.preventDefault();
+    if (searchInput.length === 0) return;
+    findCrypto(searchInput, "onsearch");
+    setSearchInput("");
+  };
   return (
     <div className="header__container">
       <div className="header__container-center">
@@ -43,13 +53,15 @@ function Header() {
                 <h3>{user.name}</h3>
               </div>
               <div className="search-bar__container">
-                <input/>
-
+                <form onSubmit={onSearch}>
+                  <input
+                    value={searchInput}
+                    onChange={(event) => handleSearchInput(event)}
+                    placeholder="Find Crypto"
+                  />
+                </form>
                 <img src={Search} alt="search" />
               </div>
-
-
-
             </div>
           ) : (
             <div

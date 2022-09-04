@@ -7,7 +7,7 @@ import Setting from "../../data/img/settings.png";
 import Arrow from "../../data/img/chevron-down.png";
 import { useState } from "react";
 
-function NavbarTop({ changeCrypto }) {
+function NavbarTop({ changeCrypto, findCrypto }) {
   const [productClicked, setProductClicked] = useState(false);
   const [orderClicked, setOrderClicked] = useState(false);
   return (
@@ -29,9 +29,30 @@ function NavbarTop({ changeCrypto }) {
         </li>
         {productClicked ? (
           <div className="expand_menu">
-            <p onClick={() => changeCrypto("bitcoin")}>Bitcoin</p>
-            <p onClick={() => changeCrypto("ethereum")}>Ethereum</p>
-            <p onClick={() => changeCrypto("tether")}>Tether</p>
+            <p
+              onClick={() => {
+                changeCrypto("bitcoin");
+                findCrypto("", "offsearch");
+              }}
+            >
+              Bitcoin
+            </p>
+            <p
+              onClick={() => {
+                changeCrypto("ethereum");
+                findCrypto("", "offsearch");
+              }}
+            >
+              Ethereum
+            </p>
+            <p
+              onClick={() => {
+                changeCrypto("tether");
+                findCrypto("", "offsearch");
+              }}
+            >
+              Tether
+            </p>
           </div>
         ) : null}
 
