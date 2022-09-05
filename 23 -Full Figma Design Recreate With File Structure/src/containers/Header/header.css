@@ -1,0 +1,32 @@
+.header__container {
+  display: flex;
+  position: fixed;
+  top: 2rem;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+.header__container img {
+  margin-left: 4rem;
+}
+
+.header__container-list {
+  background: rgba(0, 0, 0, 0.44);
+  display: flex;
+  width: 830px;
+  height: 96px;
+  color: white;
+}
+
+.header__container-list ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}

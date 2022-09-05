@@ -1,0 +1,104 @@
+.destination__container {
+  background: url(../../images/destination/Bitmap.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding: 200px 7rem 0 7rem;
+  color: white;
+}
+.destination__container-category {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+
+  letter-spacing: 4.725px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.destination__container-planet {
+  width: 100%;
+  display: flex;
+  padding: 4rem 5rem;
+  justify-content: space-between;
+}
+.destination__container nav {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.destination__container nav .planet-planet {
+  color: #d0d6f9;
+  text-decoration: none;
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  height: 30px;
+  transition: all 0.15s ease-in-out;
+  border-bottom: 2px solid rgba(255, 255, 255, 0%);
+  cursor: pointer;
+}
+.destination__container nav .planet-planet:hover {
+  border-bottom: 2px solid white;
+  color: white;
+}
+.destination__container nav .active {
+  border-bottom: 2px solid white;
+  color: white;
+}
+.destination__container-planet img {
+  margin-top: 3rem;
+}
+.destination__container-planet h1 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-size: 100px;
+  line-height: 115px;
+}
+.destination__container-planet p {
+  width: 444px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin: 3rem 0;
+}
+
+.destination__container-planet .line {
+  background: #383b4b;
+  width: 100%;
+  height: 1px;
+}
+
+.destination__container-planet .planet_distance {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.destination__container-planet .planet_distance div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.destination__container-planet .planet_distance div .top {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 2.3625px;
+  color: #d0d6f9;
+}
+.destination__container-planet .planet_distance div .bottom {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+}

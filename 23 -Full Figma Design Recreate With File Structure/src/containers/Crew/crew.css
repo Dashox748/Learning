@@ -1,0 +1,75 @@
+.crew__container {
+  background: url(../../images/crew/Bitmap.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding: 200px 7rem 0 7rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.crew__container-category {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+}
+.crew__container-person {
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.crew__container-person h1 {
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+}
+.crew__container-person h3 {
+  margin-top: 10rem;
+  font-family: "Bellefair";
+  font-weight: 400;
+  font-size: 32px;
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.crew__container-person p {
+  width: 444px;
+  height: 200px;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+  margin: 3rem 0 3rem 0;
+}
+
+.crew__container nav .nav-dot {
+  border-radius: 50%;
+  background: white;
+  color: #d0d6f9;
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  opacity: 0.17;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+.crew__container nav .nav-dot:hover {
+  opacity: 1;
+}
+.crew__container nav .active {
+  opacity: 1;
+}
+
+.person_image img {
+  height: 100%;
+}
+
+.crew__container nav {
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 2rem;
+}
