@@ -1,0 +1,128 @@
+.game__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.game__container .paper,
+.game__container .scissors,
+.game__container .rock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 100;
+  cursor: pointer;
+}
+.game__container .paper {
+  box-shadow: inset 0 -7px 0 1px hsl(230, 94%, 56%),
+    inset 0 0 0 20px hsl(230, 89%, 62%), inset 0 12px 0 15px rgba(0, 0, 0, 20%);
+  border: none;
+}
+.game__container .scissors {
+  box-shadow: inset 0 -7px 0 1px rgb(173, 113, 0),
+    inset 0 0 0 20px rgba(236, 158, 14, 1),
+    inset 0 12px 0 15px rgba(0, 0, 0, 20%);
+  border: none;
+}
+.game__container .rock {
+  box-shadow: inset 0 -7px 0 1px hsl(349, 95%, 35%),
+    inset 0 0 0 20px hsl(349, 71%, 52%), inset 0 12px 0 15px rgba(0, 0, 0, 20%);
+  border: none;
+}
+.game__container img {
+  scale: 1.4;
+}
+
+.triangle {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+}
+.top_line,
+.left_line,
+.right_line {
+  background: rgbA(0, 0, 0, 0.25);
+  height: 15px;
+}
+.top_line {
+  width: 100%;
+}
+.left_line {
+  rotate: 60deg;
+  width: 250px;
+  translate: 75px;
+}
+.right_line {
+  width: 250px;
+  rotate: -60deg;
+  translate: -65px;
+}
+.game__container_results {
+  width: 100%;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.show_result-div .paper,
+.show_result-div .scissors,
+.show_result-div .rock {
+  cursor: default;
+}
+.show_result-div {
+  width: 300px;
+  display: flex;
+  gap: 8rem;
+  flex-direction: column;
+
+  align-items: center;
+}
+.show_result-div h1 {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: white;
+}
+.show_result-div div {
+  scale: 1.4;
+}
+.notification__container {
+  margin-top: 6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+.notification__container button {
+  border: none;
+  background: white;
+  border-radius: 8px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  color: rgb(167, 19, 19);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.notification__container h5 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 2rem;
+}
+.show_result-div .active {
+  box-shadow: inset 0 -7px 0 1px hsl(230, 94%, 56%),
+    inset 0 0 0 20px hsl(230, 89%, 62%), inset 0 12px 0 15px rgba(0, 0, 0, 20%),
+    0 0 0 50px rgba(255, 255, 255, 0.05), 0 0 0 100px rgba(255, 255, 255, 0.04),
+    0 0 0 150px rgba(255, 255, 255, 0.03);
+}

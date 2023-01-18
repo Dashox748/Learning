@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.App {
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    padding: 2rem;
+    column-gap: 4rem;
+    row-gap: 4rem;
+}
+input{
+    margin: 25px auto;
+    display: flex;
+    font-size: 20px;
+    padding: 13px 30px;
+}
